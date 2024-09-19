@@ -1,6 +1,6 @@
 # Adversarial-Patch
 
-##Notebook Summary: Adversarial Patch Creation and Evaluation##
+## Notebook Summary: Adversarial Patch Creation and Evaluation ##
 
 This notebook presents the development, training, and evaluation of adversarial patches designed to manipulate the output of a pretrained ResNet-34 model on the ImageNet dataset. The goal of these patches is to force the model to misclassify images into a target class ("broccoli") by applying the patch to images. Throughout the notebook, I explore various methods to create effective adversarial patches, including versions with and without visual disguises, while ensuring robustness against random noise and image transformations.
 
