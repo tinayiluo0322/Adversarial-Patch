@@ -4,6 +4,18 @@
 
 This notebook presents the development, training, and evaluation of adversarial patches designed to manipulate the output of a pretrained ResNet-34 model on the ImageNet dataset. The goal of these patches is to force the model to misclassify images into a target class ("broccoli") by applying the patch to images. Throughout the notebook, I explore various methods to create effective adversarial patches, including versions with and without visual disguises, while ensuring robustness against random noise and image transformations.
 
+Apple Classification 
+
+![IMG_5525](https://github.com/user-attachments/assets/f1605edd-ac04-473c-a94b-6b81af2ee533)
+
+Apple Classification Results Probabilities
+
+![IMG_5530](https://github.com/user-attachments/assets/e1f7f9f6-e683-4c7c-bb42-69429d63c837)
+
+Disguised Patch
+
+![IMG_5516](https://github.com/user-attachments/assets/6f476fd2-8366-4999-ba3b-732c29e5539c)
+
 ### Key Components of the Notebook:
 
 1. **Dataset Preparation and Model Setup**:
@@ -80,16 +92,3 @@ For my project, I used the TinyImageNet dataset to train and validate two types 
 Take the example of the image where the model saw an apple 🍏 as broccoli—yes, it really works that well!
 
 🎉 Key Takeaway: With these patches in hand, you can trick even the most advanced computer vision systems into seeing something that isn't there!
-
-Disguised Patch
-
-![IMG_5516](https://github.com/user-attachments/assets/6f476fd2-8366-4999-ba3b-732c29e5539c)
-
-Apple Classification 
-
-![IMG_5525](https://github.com/user-attachments/assets/f1605edd-ac04-473c-a94b-6b81af2ee533)
-
-Apple Classification Results Probabilities
-
-![IMG_5530](https://github.com/user-attachments/assets/e1f7f9f6-e683-4c7c-bb42-69429d63c837)
-
