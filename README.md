@@ -71,7 +71,8 @@ For my project, I used the TinyImageNet dataset to train and validate two types 
 
 1. Version 1: The Undisguised Patch My first patch was straightforward: no disguise, pure trickery. I trained it to make the model see broccoli everywhere. And the results? Mind-blowing!
  - 94% Top-1 Accuracy: 94% of the images with the patch were classified as “broccoli.”
- - 98% Top-5 Accuracy: 98% of the time, broccoli was in the model’s top 5 predictions. 
+ - 98% Top-5 Accuracy: 98% of the time, broccoli was in the model’s top 5 predictions.
+   
 2. Version 2: The Disguised Patch This is where things got even more exciting. My second patch looks like an ordinary, all-black square to the human eye—completely unassuming. But when placed alongside any object, it manipulates the ResNet34 model into predicting broccoli.
  - 90% Top-1 Accuracy: 90% of images with this disguised patch were classified as “broccoli.”
  - 95% Top-5 Accuracy: 95% of the time, broccoli was in the top 5 predictions. This disguised patch proves that even something that appears simple and harmless to humans can wreak havoc on a powerful vision model.
@@ -79,3 +80,16 @@ For my project, I used the TinyImageNet dataset to train and validate two types 
 Take the example of the image where the model saw an apple 🍏 as broccoli—yes, it really works that well!
 
 🎉 Key Takeaway: With these patches in hand, you can trick even the most advanced computer vision systems into seeing something that isn't there!
+
+Disguised Patch
+
+![IMG_5516](https://github.com/user-attachments/assets/6f476fd2-8366-4999-ba3b-732c29e5539c)
+
+Apple Classification 
+
+![IMG_5525](https://github.com/user-attachments/assets/f1605edd-ac04-473c-a94b-6b81af2ee533)
+
+Apple Classification Results Probabilities
+
+![IMG_5530](https://github.com/user-attachments/assets/e1f7f9f6-e683-4c7c-bb42-69429d63c837)
+
