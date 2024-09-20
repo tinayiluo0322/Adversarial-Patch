@@ -21,7 +21,7 @@ This notebook presents the development, training, and evaluation of adversarial 
 5. **Saving and Visualization**:
    Each trained patch is saved in multiple formats, including a `.pt` model file for further experimentation, a `.png` image for visualization, and a JSON file containing the training metrics. The patch images are visualized at the end of the training process, allowing users to inspect the patch design.
 
-### Results and Conclusion
+### Results and Evaluation
 
 **Adversarial Patch Version 1: A Non-Disguised Broccoli**
 
@@ -60,3 +60,22 @@ After training, the patch was evaluated on a validation set by placing it random
 - **Final Top-5 Accuracy**: 0.9546 (95.46% of images included "broccoli" in the top 5 predictions)
 
 The trained patch was saved as a `.pt` file and visualized as a `.png` image. All training metrics, including the loss per epoch, accuracy, and top-5 accuracy, were saved in a JSON file for further analysis. The result is a highly effective, visually disguised adversarial patch that forces the classifier to predict "broccoli" without being overtly detectable.
+
+### Conclusion
+
+It was fun coding and creating my own adversarial patches! My patches are designed to trick the ResNet34 model, making it classify nearly everything in sight as broccoli 🥦.
+
+🔍 What’s an Adversarial Patch? An adversarial patch is a specially crafted image or pattern that, when placed in a visual scene, can manipulate deep learning models to predict the wrong class with high confidence. Essentially, you can fool even the most powerful computer vision models into making incorrect classifications by adding a tiny patch to the image.
+
+For my project, I used the TinyImageNet dataset to train and validate two types of adversarial patches:
+
+1. Version 1: The Undisguised Patch My first patch was straightforward: no disguise, pure trickery. I trained it to make the model see broccoli everywhere. And the results? Mind-blowing!
+ - 94% Top-1 Accuracy: 94% of the images with the patch were classified as “broccoli.”
+ - 98% Top-5 Accuracy: 98% of the time, broccoli was in the model’s top 5 predictions. 
+2. Version 2: The Disguised Patch This is where things got even more exciting. My second patch looks like an ordinary, all-black square to the human eye—completely unassuming. But when placed alongside any object, it manipulates the ResNet34 model into predicting broccoli.
+ - 90% Top-1 Accuracy: 90% of images with this disguised patch were classified as “broccoli.”
+ - 95% Top-5 Accuracy: 95% of the time, broccoli was in the top 5 predictions. This disguised patch proves that even something that appears simple and harmless to humans can wreak havoc on a powerful vision model.
+
+Take the example of the image where the model saw an apple 🍏 as broccoli—yes, it really works that well!
+
+🎉 Key Takeaway: With these patches in hand, you can trick even the most advanced computer vision systems into seeing something that isn't there!
